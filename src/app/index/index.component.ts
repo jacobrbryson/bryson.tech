@@ -8,7 +8,8 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener }
 
 export class IndexComponent implements OnInit {
   public isMenuCollapsed = true;
-  @ViewChild('stickyMenu', {static: false}) menuElement: ElementRef;
+  
+  @ViewChild('stickyMenu') menuElement: ElementRef;
 
   sticky: boolean = false;
   elementPosition: any;
@@ -31,5 +32,4 @@ export class IndexComponent implements OnInit {
         this.sticky = false;
       }
     }
-
 }
