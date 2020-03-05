@@ -1,0 +1,290 @@
+<div class="container-fluid p-3">
+    <div class="row py-3">
+        <div [ngClass]="{'col-sm-6 col-lg-4 col-xl-3' : isExpLSR7Collapse}" class="col-12 mt-2">
+            <div class="card bg-secondary card-hover">
+                <img class="card-img-top img-fluid" src="assets/images/lssd.jpg" alt="Card image"/>
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <img 
+                                class="rounded-circle border border-dark exp-icon-image"
+                                src="assets/images/lssd_logo.png"
+                                alt="LSR7 Logo"/>
+                        </div>
+                    </div>
+                    <h5 class="card-title pt-3 pb-2">
+                        Lee's Summit School District<br/>
+                        <small>
+                            Web Developer ‐ Nov. 2017 - Now
+                        </small>
+                    </h5>
+                    <hr/>
+                    <div class="w-100 text-center">
+                        <a class="link" type="button" (click)="isExpLSR7Collapse = !isExpLSR7Collapse">
+                            Details
+                        </a>
+                    </div>
+                    <div [ngbCollapse]="isExpLSR7Collapse" class="collapse">
+                        <ul class="text pt-3">
+                            <li class="text-left">
+                                <i>PaymentCentral</i>, a payment processing application that processes student fees and 
+                                includes an online store.  The application processes $1.2 million in sales annually.
+                            </li>
+                            <li class="text-left">
+                                <i>eApply</i>, this piece of software provides a centralized portal for students, employees, and 
+                                the public to apply for various activities that the district offers.
+                            </li>
+                            <li class="text-left">
+                                <i>EventTracker</i>, this application allows buildings to set up events (for instance: dances or presenations) 
+                                that staff &amp; students can check into using their Employee/Student ID.  The system offers various levels of security.  It also includes
+                                an unattended kiosk mode, as well as an attended mode for looking up attendees.
+                            </li>
+                            <li class="text-left">
+                                <i>eScheduler</i>, a scheduling tool that integrates with the district's current Student Information System that allows 
+                                for parents to easily schedule parent/teacher conferences.  This tool is also useful for scheduling exam times an other activities.
+                            </li>
+                            <li class="text-left">
+                                <i>Off Campus Attendance Tracking</i>, a light weight application that allows students, using Google oAuth2, to sign in to 
+                                a portal that captures their attendance.  The application uses the offsite location's IP address to verify the student's attendance.
+                                The associated reporting tools cross reference to student's attendance data with their course schedule in the district's
+                                Student Information System to show the administrators the attendance data.
+                            </li>
+                            <li class="text-left">
+                                <i>ContactUs</i>, another light weight utility that creates a contact us form based on the department(s) that a member of the 
+                                Lee's Summit community would like to contact. The data is organized and sent to the respective parties. Parties can be 
+                                administered from within the application. Depending on the type of contact, the application decides if the communication
+                                should be anonymous and handles that information accordingly. 
+                            </li>
+                            <li class="text-left">
+                                <i>MyLSR7/SSO</i>, primarily using Google's oAuth2, this application creates a more secure, fluid, and single signon for authentication.
+                                The application provides a central user account management area for staff, student, third party, and public accounts. The process 
+                                integrates with LDAP, Google oAuth2, and the district's other user management services.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="{'col-sm-6 col-lg-4 col-xl-3' : isExpHeelsCollapse}" class="col-12 mt-2">
+            <div class="card bg-secondary card-hover">
+                <img class="card-img-top img-fluid" src="assets/images/heels.jpg" alt="Card image"/>
+                <div class="card-body">
+                    <div class="text-center">
+                        <img 
+                            class="rounded-circle border border-dark exp-icon-image"
+                            src="assets/images/heelscom_logo.png"
+                            alt="Heels.com Logo"/>
+                    </div>
+                    <h5 class="card-title pt-3 pb-2">
+                        Heels.com<br/>
+                        <small>
+                            Web Developer ‐ May 2015 - May 2018
+                        </small>
+                    </h5>
+                    <hr>
+                    <div class="w-100 text-center">
+                        <a class="link" type="button" (click)="isExpHeelsCollapse = !isExpHeelsCollapse">
+                            Details
+                        </a>
+                    </div>
+                    <div [ngbCollapse]="isExpHeelsCollapse" class="collapse">
+                        <ul class="text pt-3">
+                            <li class="text-left">
+                                Integrate, Update, and Maintain Third Party API Connections with 
+                                companies like Amazon.com, Jet.com, Paypal.com, Google.com, 
+                                Cybersource.com, &amp; others
+                            </li>
+                            <li class="text-left">
+                                Debug and optimize site functionality
+                            </li>
+                            <li class="text-left">
+                                Develop automated systems for commerce, reporting, and third party 
+                                integration
+                            </li>
+                            <li class="text-left">
+                                Facilitate social media integration like building out a shoppable 
+                                instagram feed
+                            </li>
+                            <li class="text-left">
+                                Build company transactional emails, monitor click rates, 
+                                conversions, and contact loss rates
+                            </li>
+                            <li class="text-left">
+                                Develop strategies for gaining new leads
+                            </li>
+                            <li class="text-left">
+                                Assist marketing team in the development and deployment of new campaigns
+                            </li>
+                            <li class="text-left">
+                                Perform many helpdesk duties including but not limited to desktop support and networking
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="{'col-sm-6 col-lg-4 col-xl-3' : isExpBBBCollapse}" class="col-12 mt-2">
+            <div class="card bg-secondary card-hover">
+                <img class="card-img-top img-fluid" src="assets/images/bbb.jpg" alt="Burkett Burkett & Burkett"/>
+                <div class="card-body">
+                    <div class="text-center">
+                        <img 
+                            class="rounded-circle border exp-icon-image"
+                            src="assets/images/bbb_logo.png"
+                            alt="Burkett Burkett & Burkett Logo"/>
+                    </div>
+                    <h5 class="card-title pt-3 pb-2">
+                        Burkett Burkett &amp; Burkett CPAs<br/>
+                        <small>
+                            IT Specialist ‐ Dec. 2012 - Sept. 2014
+                        </small>
+                    </h5>
+                    <hr/>
+                    <div class="w-100 text-center">
+                        <a class="link" type="button" (click)="isExpBBBCollapse = !isExpBBBCollapse">
+                            Details
+                        </a>
+                    </div>
+                    <div [ngbCollapse]="isExpBBBCollapse" class="collapse">
+                        <ul class="text pt-3">
+                            <li class="text-left">
+                                Managed the firm’s helpdesk, supporting over 50 end‐user's at two sites
+                            </li>
+                            <li class="text-left">
+                                Oversaw the firm’s terminal, gateway, and production servers
+                            </li>
+                            <li class="text-left">
+                                Converted over 20 physical servers to virtual machines (Hyper‐V)
+                            </li>
+                            <li class="text-left">
+                                Implemented and managed much of the firm’s disaster recovery practices
+                            </li>
+                            <li class="text-left">
+                                Managed replication of virtual machines between sites
+                            </li>
+                            <li class="text-left">
+                                Supported desktops, Surfaces, iPads, and end‐user’s personal 
+                                devices as well as back‐of‐the‐house hardware such as routers, 
+                                switches, servers, and cabling
+                            </li>
+                            <li class="text-left">
+                                Scheduled outages for application maintenance, oversaw 
+                                application upgrades and maintenance
+                            </li>
+                            <li class="text-left">
+                                Responsible for the firm’s data backups, both tape and disk
+                            </li>
+                            <li class="text-left">
+                                Responsible for troubleshooting applications within the firm 
+                                to correct and report bugs within applications
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="{'col-sm-6 col-lg-4 col-xl-3' : isExpBTCollapse}" class="col-12 mt-2">
+            <div class="card bg-secondary card-hover">
+                <img class="card-img-top img-fluid" src="assets/images/bt.jpg" alt="Brysontech"/>
+                <div class="card-body">
+                    <div class="text-center">
+                        <img 
+                            class="rounded-circle border exp-icon-image"
+                            src="assets/images/bt_logo.png"
+                            alt="Brysontech"/>
+                    </div>
+                    <h5 class="card-title pt-3 pb-2">
+                        Brysontech LLC<br/>
+                        <small>
+                            Freelance Developer ‐ Sept. 2011 - Dec. 2012
+                        </small>
+                    </h5>
+                    <hr/>
+                    <div class="w-100 text-center">
+                        <a class="link" type="button" (click)="isExpBTCollapse = !isExpBTCollapse">
+                            Details
+                        </a>
+                    </div>
+                    <div [ngbCollapse]="isExpBTCollapse" class="collapse">
+                        <ul class="text pt-3">
+                            <li class="text-left">
+                                Provided custom technology support to various customers 
+                                including community centers, offices, churches, and individuals
+                            </li>
+                            <li class="text-left">
+                                Built physical and digital networks designed to be robust and 
+                                easy to use for clients
+                            </li>
+                            <li class="text-left">
+                                Designed, built, and maintained numerous database driven websites
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="{'col-sm-6 col-lg-4 col-xl-3' : isExpUSCLCollapse}" class="col-12 mt-2">
+            <div class="card bg-secondary card-hover">
+                <img 
+                    class="card-img-top img-fluid" 
+                    src="assets/images/uscl.jpg" 
+                    alt="University of South Carolina - Lancaster"/>
+                <div class="card-body">
+                    <div class="text-center">
+                        <img 
+                            class="rounded-circle border exp-icon-image"
+                            src="assets/images/uscl_logo.png"
+                            alt="University of South Carolina - Lancaster Logo"/>
+                    </div>
+                    <h5 class="card-title pt-3 pb-2">
+                        University of South Carolina<br/>
+                        <small>
+                            IT Coordinator ‐ Mar. 2008 - Sept. 2011
+                        </small>
+                    </h5>
+                    <hr/>
+                    <div class="w-100 text-center">
+                        <a class="link" type="button" (click)="isExpUSCLCollapse = !isExpUSCLCollapse">
+                            Details
+                        </a>
+                    </div>
+                    <div [ngbCollapse]="isExpUSCLCollapse" class="collapse">
+                        <ul class="text pt-3">
+                            <li class="text-left">
+                                Provided desktop support for approximately 1800 students and over 100 faculty and staff
+                            </li>
+                            <li class="text-left">
+                                Administered campus systems, including email, Active Directory, 
+                                antivirus, WSUS, third party applications, and software updates
+                            </li>
+                            <li class="text-left">
+                                Tested software compatibility for, and directed the campus‐wide 
+                                migration to Windows 7
+                            </li>
+                            <li class="text-left">
+                                Scripted batch files used for remote software deployment within Active Directory Domain
+                            </li>
+                            <li class="text-left">
+                                Created technical policies for campus management of images, 
+                                software organization, and wireless network monitoring
+                            </li>
+                            <li class="text-left">
+                                Taught TSTM 342 ‐ Introduction to Desktop Hardware
+                            </li>
+                            <li class="text-left">
+                                Managed a staff of two technicians
+                            </li>
+                            <li class="text-left">
+                                Tested and ensured new software met campus quality and security 
+                                standards, including HIPAA and FERPA compliance
+                            </li>
+                            <li class="text-left">
+                                Developed numerous tools and applications to support campus activities
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

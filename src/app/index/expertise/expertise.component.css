@@ -1,0 +1,14 @@
+.table{
+    color:#f8f9fa;
+}
+
+.card{
+    border:0;
+}
+
+.card-hover:hover {
+    top:-5px;
+    box-shadow: 5px 5px 10px #000;
+    transition: top .5s ease;
+    transition: box-shadow .1s ease;
+}

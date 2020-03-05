@@ -1,30 +1,56 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule }   from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { FontAwesomeModule, FaIconLibrary, FaConfig } from '@fortawesome/angular-fontawesome';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { IndexComponent }      from './index/index.component';
+import { FooterComponent }      from './footer/footer.component';
+import { ExpertiseComponent } from './index/expertise/expertise.component';
+import { SuccessesComponent } from './index/successes/successes.component';
+import { HeaderComponent } from './index/header/header.component';
+import { ExperienceComponent } from './index/experience/experience.component';
+import { EducationComponent } from './index/education/education.component';
+import { ProjectsComponent } from './index/projects/projects.component';
+import { ContactComponent } from './index/contact/contact.component';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    FormsModule
+  ],
+  declarations: [
+    AppComponent,
+    IndexComponent,
+    ExpertiseComponent,
+    SuccessesComponent,
+    HeaderComponent,
+    FooterComponent,
+    ExperienceComponent,
+    EducationComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
   constructor(library: FaIconLibrary, faConfig: FaConfig) {
-    faConfig.defaultPrefix = 'fab';
-    // Add an icon to the library for convenient access in other components
-    library.addIcons(faHtml5);
+    library.addIconPacks(fas, far, fab);
   }
 }

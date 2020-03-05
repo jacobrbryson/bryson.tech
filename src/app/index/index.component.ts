@@ -7,29 +7,9 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener }
 })
 
 export class IndexComponent implements OnInit {
-  public isMenuCollapsed = true;
-  
-  @ViewChild('stickyMenu') menuElement: ElementRef;
-
-  sticky: boolean = false;
-  elementPosition: any;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  ngAfterViewInit(){
-    this.elementPosition = this.menuElement.nativeElement.offsetTop;
-  }
-
-  @HostListener('window:scroll', ['$event'])
-    handleScroll(){
-      const windowScroll = window.pageYOffset;
-      if(windowScroll >= this.elementPosition){
-        this.sticky = true;
-      } else {
-        this.sticky = false;
-      }
-    }
 }

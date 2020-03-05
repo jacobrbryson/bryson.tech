@@ -1,85 +1,32 @@
 .parallax {
-    /* The image used */
-    background-image: url('/assets/images/bg-waterfall-1.jpg');
-    background-size: cover;
-    height: 200px;
-    background-color:gray;
-    /* Set a specific height */
-    
+  /* The image used */
+  background-image: url('/assets/images/bg-waterfall-1.jpg');
+  background-size: cover;
+  height: 200px;
+  background-color:gray;
+  /* Set a specific height */
   
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
-  .party-picture{
-    margin-top:-44px;
-  }
-  .sticky{
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    z-index: 10;
-    width: 100%;
-  }
-  .center-content{
-    margin:auto;
-  }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  /* Link stuff */
-  ul .navbar-nav { 
-    padding: 0; 
-    list-style: none; 
-    display: table;
-    width: 600px;
-    text-align: center;
-  }
-  li .nav-item{ 
-    display: table-cell; 
-    position: relative; 
-    padding: 15px 0;
-  }
-  a {
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-  }
-  a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+.underline{
+  border-bottom: 2px solid rgba(255,255,255,0.75);
+}
 
-  .card{
-    border:0;
-  }
+.headline{
+  color:rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  letter-spacing: 0.075em;
+}
 
-  @media only screen and (min-width: 576px) {
-    .card-center{
-      padding-top:30px;
-    }
-  }
-
-.card-hover:hover {
-  margin-top:-5px;
-  box-shadow: 5px 5px 10px gray;
-  transition: margin-top .5s ease;
-  transition: box-shadow .5s ease;
+.para-header{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: rgba(0, 0, 0, 0.75);
 }

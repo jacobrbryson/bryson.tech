@@ -1,0 +1,60 @@
+<header>
+    <div class="container mb-2">
+        <div class="row text-light text-center">
+            <div class="col-12 col-sm-4 center-content">
+                <h2 class="py-5 headline">
+                    Ross Bryson
+                </h2>
+            </div>
+            <div class="col-12 col-sm-4">
+                <img class="rounded-circle party-picture border"
+                    src="assets/images/profile.jpg"/>
+            </div>
+            <div class="col-12 col-sm-4 center-content">
+                <h5 class="py-2">
+                    <a href="#contact_me" class="link">
+                        ross@brysontech.com
+                    </a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div style="height:72px;">
+    <nav class="
+        navbar 
+        navbar-dark 
+        bg-dark 
+        navbar-expand-lg 
+        border-top
+        border-bottom" #stickyMenu
+    [class.sticky] = "sticky">
+        <button class="btn p-3 navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+            <span style="font-size: 1.5em;">&#9776;</span>
+        </button>
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-between">
+            <ul class="navbar-nav w-100 d-flex justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link" href="#expertise">Tech Stack</a>
+                </li>
+                <!--li class="nav-item">
+                    <a class="nav-link" href="#successes">Successes</a>
+                </li-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <!--<a class="nav-link" [routerLink]="'/apps'" (click)="isMenuCollapsed = true">Apps</a>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <!--li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

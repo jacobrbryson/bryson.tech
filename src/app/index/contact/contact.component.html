@@ -1,0 +1,71 @@
+<div class="container p-3">
+    <div class="row py-3">
+        <div *ngIf="token && !email_sent" class="col-12 col-sm-9 mt-2 pt-4">
+            <form (ngSubmit)="processForm()">
+                <!-- name -->
+                <div class="field mt-2">
+                    <label for="name">
+                        Name
+                    </label>
+                    <input 
+                        [(ngModel)]="name" 
+                        type="text" 
+                        name="name" 
+                        id="name"
+                        class="form-control w-100" 
+                        placeholder="Your Name">
+                </div>
+              
+                <!-- email -->
+                <div class="field mt-2">
+                    <label for="email">
+                        Email
+                    </label>
+                    <input 
+                        [(ngModel)]="email" 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        class="form-control w-100" 
+                        placeholder="Your Email">
+                </div>
+                <!-- message -->
+                <div class="field mt-2">
+                    <label for="message">
+                        Message
+                    </label>
+                    <textarea 
+                        [(ngModel)]="message" 
+                        class="textarea" 
+                        name="message" 
+                        id="message"
+                        rows="4" 
+                        class="form-control w-100" 
+                        placeholder="What's on your mind?"></textarea>
+                </div>
+              
+                <button type="submit" class="btn btn-danger btn-lg mt-4">Submit</button>
+                <input [(ngModel)]="token" type="hidden" name="token" id="token" value="{{token}}"/>
+              </form>
+        </div>
+        <div *ngIf="email_sent" class="col-12 col-sm-9 mt-2 pt-4 text-center">
+            <div class="center-content headline">
+                <h1>Thank You!</h1>
+                <p>I'll be in touch with you shortly.</p>
+            </div>
+        </div>
+        <div [ngClass]="{'col-sm-3' : token}"class="col-12 text-center center-content headline pt-4">
+            <h3>Ross Bryson</h3>
+            <a href="mailto:ross@brysontech.com">ross@brysontech.com</a><br/>
+            <a href="https://www.linkedin.com/in/ross-bryson-software-engineer" alt="Linkedin Profile">
+                <fa-icon [icon]="['fab', 'linkedin']" class="mr-2"></fa-icon>Linkedin
+            </a><br/>
+            <a href="https://www.facebook.com/ross.bryson.927" alt="Facebook Profile">
+                <fa-icon [icon]="['fab', 'facebook-square']" class="mr-2"></fa-icon>Facebook
+            </a><br/>
+            <a href="https://twitter.com/RossBryson3" alt="Twitter Profile">
+                <fa-icon [icon]="['fab', 'twitter-square']" class="mr-2"></fa-icon>Twitter
+            </a><br/>
+        </div>
+    </div>
+</div>

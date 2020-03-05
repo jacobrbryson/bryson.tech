@@ -1,0 +1,49 @@
+.underline{
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+.headline{
+    color:rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    letter-spacing: 0.075em;
+}
+/* Link stuff */
+a {
+    color:rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a:hover:after { 
+    width: 100%;
+    left: 0; 
+}
+
+.exp-icon-image{
+    width:50%;
+    margin-top:-50%;
+    max-width: 300px;
+}
+.card-hover:hover {
+    top:-5px;
+    box-shadow: 5px 5px 10px #000;
+    transition: top .5s ease;
+    transition: box-shadow .1s ease;
+}
+
+.col-12{
+    transition: all 0.5s ease-in-out;
+}

@@ -1,222 +1,54 @@
 <div class="parallax"></div>
-<div class="container mb-2">
-    <div class="row text-light text-center">
-        <div class="col-12 col-sm-4 center-content">
-            <h2 class="py-5">
-                Ross Bryson
-            </h2>
-        </div>
-        <div class="col-12 col-sm-4">
-            <img class="rounded-circle party-picture border"
-                src="https://media-exp1.licdn.com/dms/image/C5603AQFdkJCU72f__g/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=r75c98vsIkV4k_ZUNkHzRw9MomN4CbFai26aMAuKhik"/>
-        </div>
-        <div class="col-12 col-sm-4 center-content">
-            <h5 class="py-2">
-                <a href="#contact_me" class="link">
-                    ross@brysontech.com
-                </a>
-            </h5>
+<app-header></app-header>
+<div class="parallax" id="expertise">
+    <div class="para-header h-100 w-100">
+        <div class="text-center">
+            <h3 class="headline">
+                <span class="underline pb-3">Tech Stack</span>
+            </h3>
         </div>
     </div>
 </div>
-<div style="height:72px;">
-    <nav class="
-    navbar 
-    navbar-dark 
-    bg-dark 
-    navbar-expand-lg 
-    border-top
-    border-bottom" #stickyMenu
-[class.sticky] = "sticky">
-    <button class="btn p-3 navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
-        <span style="font-size: 1.5em;">&#9776;</span>
-    </button>
-    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-between">
-        <ul class="navbar-nav w-100 d-flex justify-content-around">
-            <li class="nav-item">
-                <a class="nav-link" href="#expertise">Expertise</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#successes">Successes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-                <!--<a class="nav-link" [routerLink]="'/apps'" (click)="isMenuCollapsed = true">Apps</a>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects">Current Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact_me">Contact Me</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-</div>
-
-<div class="parallax"></div>
-<div class="container-fluid p-3" id="expertise">
-    <div class="row">
-        <div class="col-12">
-            <h4 class="text-light text-center py-2">
-                Expertise
-            </h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-sm-4 mt-2">
-            <div class="card bg-secondary card-hover">
-                <img class="card-img-top" src="assets/images/card-code.jpg" alt="Card image">
-                <div class="card-body p-0">
-                    <h5 class="card-title text-center pt-3">
-                        Programming Languages
-                    </h5>
-                    <table class="card-table table table-stripped">
-                        <thead>
-                            <tr>
-                                <th scope="col">
-                                    Name
-                                </th>
-                                <th>
-                                    <span class="float-right">Years of Exp</span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td scope="col">
-                                <!--fa-icon icon="html5" class="ml-2"></fa-icon-->HTML, CSS, &amp; JavaScript
-                            </td>
-                            <td scope="col">
-                                <span class="float-right">14</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col">
-                                MySQL &amp; SQL Server
-                            </td>
-                            <td>
-                                <span class="float-right">14</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col">
-                                PHP
-                            </td>
-                            <td scope="col">
-                                <span class="float-right">8</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col">
-                                Coldfusion &amp; Lucee
-                            </td>
-                            <td scope="col">
-                                <span class="float-right">3</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col">
-                                C#
-                            </td>
-                            <td scope="col">
-                                <span class="float-right">1</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col">
-                                MongoDB
-                            </td>
-                            <td scope="col">
-                                <span class="float-right">1</span>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="w-100 text-center reveal pb-3">
-                        <a class="btn btn-info">
-                            More Details
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-4 mt-2 card-center">
-            <div class="card bg-secondary card-hover">
-                <img class="card-img-top" src="assets/images/card-software.jpg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Software
-                    </h5>
-                    <ul class="card-text">
-                        <li>
-                            Micorsoft IIS
-                        </li>
-                        <li>
-                            Apache HTTP
-                        </li>
-                        <li>
-                            NGINX
-                        </li>
-                        <li>
-                            GIMP &amp; Photoshop
-                        </li>
-                        <li>
-                            Blender
-                        </li>
-                        <li>
-                            Unity
-                        </li>
-                    </ul>
-                    <div class="w-100 text-center reveal">
-                        <a class="btn btn-info">
-                            More Details
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-4 mt-2">
-            <div class="card bg-secondary card-hover">
-                <img class="card-img-top" src="assets/images/card-framework.jpg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Frameworks
-                    </h5>
-                    <ul class="card-text">
-                        <li>
-                            Bootstrap
-                        </li>
-                        <li>
-                            jQuery
-                        </li>
-                        <li>
-                            Angular.js
-                        </li>
-                        <li>
-                            Node.js
-                        </li>
-                        <li>
-                            Angular
-                        </li>
-                        <li>
-                            Symphony
-                        </li>
-                        <li>
-                            Coldfusion &amp; Lucee
-                        </li>
-                    </ul>
-                    <div class="w-100 text-center reveal">
-                        <a class="btn btn-info">
-                            More Details
-                        </a>
-                    </div>
-                </div>
-            </div>
+<app-expertise></app-expertise>
+<!--div class="parallax" id="successes"></div>
+<app-successes></app-successes-->
+<div class="parallax" id="experience">
+    <div class="para-header h-100 w-100">
+        <div class="text-center">
+            <h3 class="headline">
+                <span class="underline pb-3">Employment</span>
+            </h3>
         </div>
     </div>
 </div>
-
-<div class="parallax"></div>
-<div class="pseduo-nav text-center bg-dark"></div>
+<app-experience></app-experience>
+<div class="parallax" id="education">
+    <div class="para-header h-100 w-100">
+        <div class="text-center">
+            <h3 class="headline">
+                <span class="underline pb-3">Education</span>
+            </h3>
+        </div>
+    </div>
+</div>
+<app-education></app-education>
+<!--div class="parallax" id="projects">
+    <div class="para-header h-100 w-100">
+        <div class="text-center">
+            <h3 class="headline">
+                <span class="underline pb-3">Projects</span>
+            </h3>
+        </div>
+    </div>
+</div>
+<app-projects></app-projects-->
+<div class="parallax" id="contact">
+    <div class="para-header h-100 w-100">
+        <div class="text-center">
+            <h3 class="headline">
+                <span class="underline pb-3">Contact</span>
+            </h3>
+        </div>
+    </div>
+</div>
+<app-contact></app-contact>
