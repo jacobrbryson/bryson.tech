@@ -38,6 +38,11 @@ export class HeaderComponent implements OnInit {
     this.elementPosition = this.menuElement.nativeElement.offsetTop;
   }
 
+  scrollToElement($element): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
       const windowScroll = window.pageYOffset;
