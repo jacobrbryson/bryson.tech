@@ -36,23 +36,23 @@
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-between">
             <ul class="navbar-nav w-100 d-flex justify-content-around">
                 <li class="nav-item">
-                    <a class="nav-link" href="#expertise">Tech Stack</a>
+                    <a class="nav-link" href="#expertise" (click)="isMenuCollapsed = true">Tech Stack</a>
                 </li>
                 <!--li class="nav-item">
                     <a class="nav-link" href="#successes">Successes</a>
                 </li-->
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#experience" (click)="isMenuCollapsed = true">Experience</a>
                     <!--<a class="nav-link" [routerLink]="'/apps'" (click)="isMenuCollapsed = true">Apps</a>-->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#education" (click)="isMenuCollapsed = true">Education</a>
                 </li>
                 <!--li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li-->
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact" (click)="isMenuCollapsed = true">Contact</a>
                 </li>
             </ul>
         </div>
