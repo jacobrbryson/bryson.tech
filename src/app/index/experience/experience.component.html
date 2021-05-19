@@ -1,5 +1,39 @@
 <div class="container-fluid p-3">
     <div class="row py-3">
+        <div [ngClass]="{'col-sm-6 col-lg-4 col-xl-3' : isExpKITCollapse}" class="col-12 mt-2">
+            <div class="card bg-secondary card-hover">
+                <img class="card-img-top img-fluid" src="assets/images/kit.jpg" alt="Card image"/>
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <img 
+                                class="rounded-circle border border-dark exp-icon-image"
+                                src="assets/images/kit_logo.png"
+                                alt="Kincaid IT Logo"/>
+                        </div>
+                    </div>
+                    <h5 class="card-title pt-3 pb-2">
+                        Kincaid IT<br/>
+                        <small>
+                            Lead Developer ‐ Sept 2020 - Now
+                        </small>
+                    </h5>
+                    <hr/>
+                    <div class="w-100 text-center">
+                        <a class="link" type="button" (click)="isExpKITCollapse = !isExpKITCollapse">
+                            Details
+                        </a>
+                    </div>
+                    <!--div [ngbCollapse]="isExpKITCollapse" class="collapse">
+                        <ul class="text pt-3">
+                            <li class="text-left">
+                                <i>KIT Central</i>, ...
+                            </li>
+                        </ul>
+                    </div-->
+                </div>
+            </div>
+        </div>
         <div [ngClass]="{'col-sm-6 col-lg-4 col-xl-3' : isExpLSR7Collapse}" class="col-12 mt-2">
             <div class="card bg-secondary card-hover">
                 <img class="card-img-top img-fluid" src="assets/images/lssd.jpg" alt="Card image"/>
@@ -15,7 +49,7 @@
                     <h5 class="card-title pt-3 pb-2">
                         Lee's Summit School District<br/>
                         <small>
-                            Web Developer ‐ Nov. 2017 - Now
+                            Web Developer ‐ Nov. 2017 - Sept 2020
                         </small>
                     </h5>
                     <hr/>

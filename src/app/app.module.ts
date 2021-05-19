@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }   from '@angular/forms';
+import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from "ng-recaptcha";
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -32,7 +33,8 @@ import { ContactComponent } from './index/contact/contact.component';
     AppRoutingModule,
     FontAwesomeModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    RecaptchaV3Module
   ],
   declarations: [
     AppComponent,
@@ -46,7 +48,7 @@ import { ContactComponent } from './index/contact/contact.component';
     ProjectsComponent,
     ContactComponent
   ],
-  providers: [],
+  providers: [{ provide: RECAPTCHA_V3_SITE_KEY, useValue: "6LdfhNkaAAAAAKs83avzU0JgtkSPidPOLfcPW4xA" }],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

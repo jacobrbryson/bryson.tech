@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-
+  public isExpKITCollapse = false;
   public isExpLSR7Collapse = true;
   public isExpHeelsCollapse = true;
   public isExpBBBCollapse = true;
