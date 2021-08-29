@@ -1,4 +1,5 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ResumeService, Resume } from 'src/app/services/resume.service';
 
 @Component({
   selector: 'app-index',
@@ -7,8 +8,12 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener }
 })
 
 export class IndexComponent implements OnInit {
-
-  constructor() { }
+  resume: Resume = null;
+  constructor(
+    private resumeService: ResumeService
+  ) { 
+    this.resume = this.resumeService.resume;
+  }
 
   ngOnInit() {
   }

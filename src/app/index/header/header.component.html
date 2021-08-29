@@ -3,18 +3,18 @@
         <div class="row text-light text-center">
             <div class="col-12 col-sm-4 center-content">
                 <h2 class="py-5 headline">
-                    Ross Bryson
+                    {{ resume.firstName }} {{ resume.lastName}}
                 </h2>
             </div>
             <div class="col-12 col-sm-4">
                 <img class="rounded-circle party-picture border"
                     style="width:200px"
-                    src="assets/images/profile-2020.jpg"/>
+                    src="{{ resume.profileImage }}"/>
             </div>
             <div class="col-12 col-sm-4 center-content">
                 <h5 class="py-2">
                     <a href="#contact" class="link">
-                        ross@brysontech.com
+                        {{ resume.email }}
                     </a>
                 </h5>
             </div>
@@ -39,19 +39,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#expertise" (click)="isMenuCollapsed = true">Tech Stack</a>
                 </li>
-                <!--li class="nav-item">
-                    <a class="nav-link" href="#successes">Successes</a>
-                </li-->
                 <li class="nav-item">
                     <a class="nav-link" href="#experience" (click)="isMenuCollapsed = true">Experience</a>
-                    <!--<a class="nav-link" [routerLink]="'/apps'" (click)="isMenuCollapsed = true">Apps</a>-->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#education" (click)="isMenuCollapsed = true">Education</a>
                 </li>
-                <!--li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li-->
                 <li class="nav-item">
                     <a class="nav-link" href="#contact" (click)="isMenuCollapsed = true">Contact</a>
                 </li>

@@ -1,5 +1,6 @@
 <div class="parallax"></div>
-<app-header></app-header>
+<app-header
+    [resume]="resume"></app-header>
 <div class="parallax" id="expertise">
     <div class="para-header h-100 w-100">
         <div class="text-center">
@@ -9,7 +10,8 @@
         </div>
     </div>
 </div>
-<app-expertise></app-expertise>
+<app-expertise
+    [resume]="resume"></app-expertise>
 <!--div class="parallax" id="successes"></div>
 <app-successes></app-successes-->
 <div class="parallax" id="experience">

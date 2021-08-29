@@ -3,10 +3,14 @@ import { TestBed } from '@angular/core/testing';
 import { ResumeService } from './resume.service';
 
 describe('ResumeService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+  let service: ResumeService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(ResumeService);
+  });
 
   it('should be created', () => {
-    const service: ResumeService = TestBed.get(ResumeService);
     expect(service).toBeTruthy();
   });
 });

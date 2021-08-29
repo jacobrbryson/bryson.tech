@@ -1,6 +1,5 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { ResumeService } from '../../resume/resume.service';
-import { Resume } from '../../resume/resume';
+import { Component, OnInit, ViewChild, ElementRef, HostListener, Input } from '@angular/core';
+import { Resume } from 'src/app/services/resume.service';
 
 @Component({
   selector: 'app-header',
@@ -9,21 +8,16 @@ import { Resume } from '../../resume/resume';
 })
 export class HeaderComponent implements OnInit {
   public isMenuCollapsed = true;
-  Resume: Resume;
+  @Input() resume: Resume;
   
   @ViewChild('stickyMenu') menuElement: ElementRef;
 
   sticky: boolean = false;
   elementPosition: any;
-  constructor(private resumeService: ResumeService) { }
-
-  getResume(): void {
-    this.resumeService.getResume()
-    .subscribe(resume => this.Resume = resume);
-  }
+  constructor() { }
 
   ngOnInit(): void {
-    //this.getResume();
+
   }
   
   ngAfterViewInit(){
