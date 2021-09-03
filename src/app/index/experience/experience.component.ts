@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Resume } from 'src/app/services/resume.service';
 
 @Component({
   selector: 'app-experience',
@@ -6,16 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  public isExpKITCollapse = false;
-  public isExpLSR7Collapse = true;
-  public isExpHeelsCollapse = true;
-  public isExpBBBCollapse = true;
-  public isExpBTCollapse = true;
-  public isExpUSCLCollapse = true;
-
-  //Make a directive for this
-  //https://stackoverflow.com/questions/44121207/ngbcollapse-for-child-components-on-a-loop
-
+  @Input() resume: Resume;
 
   constructor() { }
 

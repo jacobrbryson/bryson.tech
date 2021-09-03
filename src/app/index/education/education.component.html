@@ -1,20 +1,20 @@
-<div class="container-fluid p-3">
-    <div class="row py-3">
+<div *ngIf="resume" class="container-fluid p-3">
+    <div *ngFor="let edu of resume.education" class="row py-3">
         <div class="col-12 col-sm-3 mt-2">
-            <img src="assets/images/Gamecocks-logo.png" class="img-fluid" alt="Gamecocks Logo"/>
+            <img src="{{ edu.image }}" class="img-fluid" alt="{{ edu.name }} Logo"/>
         </div>
         <div class="col-12 col-sm-9 my-auto py-4">
             <div>
                 <h4>
-                    University of South Carolina
+                    {{ edu.name }}
                 </h4>
                 <h6>
-                    Information and Technologies Management<br/>
-                    Bachelor’s of Science
+                    {{ edu.certification }}<br/>
+                    {{ edu.type }}
                 </h6>
                 <p class="d-flex pt-3">
-                    Columbia, South Carolina<br/>
-                    2003 - 2007
+                    {{ edu.location }}<br/>
+                    {{ edu.date }}
                 </p>
             </div>
         </div>

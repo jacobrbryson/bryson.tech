@@ -8,8 +8,6 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ContactService {
-  private baseURL = 'https://api.bryson.tech/contact'
-
   constructor(private http: HttpClient) { }
 
   addContact(contact: Contact):Observable<Contact>{
