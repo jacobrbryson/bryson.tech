@@ -7,7 +7,7 @@ export class ResumeService {
   resume: Resume = {
     id: 1,
     created: "2019-07-19 00:00:00",
-    updated: "2021-09-29 00:00:00",
+    updated: "2023-02-03 00:00:00",
     firstName: "Ross",
     lastName: "Bryson",
     email: "ross@brysontech.com",
@@ -22,13 +22,13 @@ export class ResumeService {
             name: "HTML, CSS, & JavaScript",
             prefix: "fab",
             icon: "html5",
-            years: 15
+            years: 16
           },
           {
             name: "MySQL & SQL Server",
             prefix: "fas",
             icon: "database",
-            years: 15
+            years: 16
           },
           {
             name: "PHP",
@@ -70,13 +70,13 @@ export class ResumeService {
             name: "Bootstrap",
             prefix: "fab",
             icon: "bootstrap",
-            years: 8
+            years: 9
           },
           {
             name: "Angular",
             prefix: "fab",
             icon: "angular",
-            years: 4
+            years: 5
           },
           {
             name: "Symfony",
@@ -88,7 +88,7 @@ export class ResumeService {
             name: "NodeJS",
             prefix: "fab",
             icon: "node-js",
-            years: 2
+            years: 3
           }
         ]
       },
@@ -100,10 +100,10 @@ export class ResumeService {
             name: "Apache HTTP",
             prefix: "fas",
             icon: "server",
-            years: 15
+            years: 16
           },
           {
-            name: "Micorsoft IIS",
+            name: "Microsoft IIS",
             prefix: "fab",
             icon: "microsoft",
             years: 14
@@ -130,7 +130,7 @@ export class ResumeService {
             name: "Unity 3D",
             prefix: "fab",
             icon: "unity",
-            years: 2
+            years: 3
           }
         ]
       }
@@ -141,7 +141,7 @@ export class ResumeService {
         image: "assets/images/kit.jpg",
         logo: "assets/images/kit_logo.png",
         name: "Kincaid IT",
-        position: "Lead Developer/Scrum Master ‐ Sept 2020 - Now",
+        position: "Director of Development ‐ Sept 2020 - Now",
         activities:[
           {
             name: "KIT Central",
