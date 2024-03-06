@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://dev-api.bryson.tech"
+  apiUrl: "https://dev-api.bryson.tech",
+  email: "jacobrbryson@gmail.com"
 };
 
 /*

@@ -1,13 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ContactService, Contact } from 'src/app/services/contact.service';
 import { ReCaptchaV3Service } from 'ng-recaptcha';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
+  email = environment.email;
+
   contact: Contact = {
     name: '',
     email: '',
@@ -21,10 +24,6 @@ export class ContactComponent implements OnInit {
     private contactService: ContactService,
     private recaptchaV3Service: ReCaptchaV3Service
     ) {}
-
-  ngOnInit(): void {
-    
-  }
 
   processForm() {
     this.recaptchaV3Service.execute('genToken').subscribe(token => {

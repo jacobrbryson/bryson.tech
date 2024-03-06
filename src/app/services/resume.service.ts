@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class ResumeService {
     updated: "2023-02-03 00:00:00",
     firstName: "Ross",
     lastName: "Bryson",
-    email: "ross@brysontech.com",
+    email: environment.email,
     headerImage: "",
     profileImage: "assets/images/profile-2020.jpg",
     techStack:[
@@ -22,13 +23,13 @@ export class ResumeService {
             name: "HTML, CSS, & JavaScript",
             prefix: "fab",
             icon: "html5",
-            years: 16
+            years: 17
           },
           {
             name: "MySQL & SQL Server",
             prefix: "fas",
             icon: "database",
-            years: 16
+            years: 17
           },
           {
             name: "PHP",
@@ -38,15 +39,15 @@ export class ResumeService {
           },
           {
             name: "Coldfusion & Lucee",
-            prefix: "fab",
-            icon: "adobe",
+            prefix: "fas",
+            icon: "code",
             years: 4
           },
           {
             name: "C#",
             prefix: "fab",
             icon: "microsoft",
-            years: 3
+            years: 4
           },
           {
             name: "MongoDB",
@@ -79,17 +80,23 @@ export class ResumeService {
             years: 5
           },
           {
+            name: "NodeJS",
+            prefix: "fab",
+            icon: "node-js",
+            years: 4
+          },
+          {
+            name: "Wordpress",
+            prefix: "fab",
+            icon: "wordpress",
+            years: 4
+          },
+          {
             name: "Symfony",
             prefix: "fab",
             icon: "symfony",
             years: 4
           },
-          {
-            name: "NodeJS",
-            prefix: "fab",
-            icon: "node-js",
-            years: 3
-          }
         ]
       },
       {
@@ -100,7 +107,7 @@ export class ResumeService {
             name: "Apache HTTP",
             prefix: "fas",
             icon: "server",
-            years: 16
+            years: 17
           },
           {
             name: "Microsoft IIS",
@@ -116,21 +123,21 @@ export class ResumeService {
           },
           {
             name: "Photoshop & GIMP",
-            prefix: "fab",
-            icon: "adobe",
+            prefix: "fas",
+            icon: "images",
             years: 9
           },
           {
             name: "Blender",
             prefix: "fas",
             icon: "cube",
-            years: 2
+            years: 3
           },
           {
             name: "Unity 3D",
             prefix: "fab",
             icon: "unity",
-            years: 3
+            years: 4
           }
         ]
       }
@@ -144,31 +151,52 @@ export class ResumeService {
         position: "Director of Development ‐ Sept 2020 - Now",
         activities:[
           {
-            name: "KIT Central",
-            link: "https://kincaidit.com/services/kit-central-google-workspace-tools/",
+            name: "Admin+",
+            link: "https://kincaidit.com/admin-plus/",
             entries: [
               {
-                item: "Lead a team of 5 that design, deploy, and maintain the application KIT Central",
+                item: "Lead a team of 9 developers that design, deploy, and maintain <a href='https://kincaidit.com/admin-plus/' target='_blank'>Admin+</a>",
                 subItems: []
               },
               {
-                item: "See link above for feature-set",
+                item: "Admin+ has a growing customer base with the largest organization consisting of 300,000 students",
                 subItems: []
               },
               {
-                item: "KIT Central is still in the development phase of its lifecycle but it has a growing customer base with the largest organization consisting of 79,000 students",
+                item: "Admin+ has an Angular 15 front-end and is built on top of our 'KIT Central Solution' - which consists of 20 Node.js state-less microservices",
                 subItems: []
               },
               {
-                item: "KIT Central consists of multiple NodeJS back-end services and an angular front-end",
-                subItems: []
+                item: "Because Kincaid IT is a Google Partner, the application runs 100% in Google Cloud Platform services such as:",
+                subItems: [{
+                  item: "Source Repositories",
+                  subItems: []
+                },{
+                  item: "Cloud Build",
+                  subItems: []
+                },
+                {
+                  item: "Cloud Run",
+                  subItems: []
+                },{
+                  item: "Cloud Schedular",
+                  subItems: []
+                },
+                {
+                  item: "SQL",
+                  subItems: []
+                },
+                {
+                  item: "Cloud Storage",
+                  subItems: []
+                },
+                {
+                  item: "Network Services",
+                  subItems: []
+                }]
               },
               {
-                item: "Because Kincaid IT is a Google Partner, the application runs 100% in Google Cloud Platform",
-                subItems: []
-              },
-              {
-                item: "KIT Central processes millions of http requests a day to and from Google, so it uses micro-services and automatic scaling instances to process the data as efficiently as possible",
+                item: "Admin+ processes hundreds of millions of http requests a day: back-end microservices are configured for automatic instance scaling to process the data as efficiently as possible",
                 subItems: []
               },
             ]

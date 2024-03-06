@@ -60,13 +60,13 @@
             <div class="center-content headline">
                 <h1>Oops! Something went wrong.</h1>
                 <p>
-                    You can still email me at <a href="mailto:ross@brysontech.com">ross@brysontech.com</a>
+                    You can still email me at: <a [href]="email">{{email}}</a>
                 </p>
             </div>
         </div>
         <div [ngClass]="{'col-sm-4' : !emailSent && !error}"class="col-12 text-center center-content headline pt-4">
             <h3>Ross Bryson</h3>
-            <a href="mailto:ross@brysontech.com">ross@brysontech.com</a><br/>
+            <a [href]="email">{{email}}</a><br/>
             <a href="https://www.linkedin.com/in/ross-bryson-software-engineer" target="_blank" alt="Linkedin Profile">
                 <fa-icon [icon]="['fab', 'linkedin']" class="mr-2"></fa-icon>Linkedin
             </a><br/>

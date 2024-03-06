@@ -57,7 +57,8 @@
                                     <ul *ngIf="activity.entries.length">
                                         <li
                                             *ngFor="let entry of activity.entries">
-                                            {{ entry.item }}
+                                            <span [innerHTML]="entry.item"></span>
+                                            
                                             <ul *ngIf="entry.subItems.length">
                                                 <li *ngFor="let subItem of entry.subItems">
                                                     {{ subItem.item }}
