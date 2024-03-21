@@ -8,3 +8,16 @@ mat-icon {
   vertical-align: middle;
   margin-bottom:5px;
 }
+
+.card-hover:hover {
+  top:-5px;
+  box-shadow: 5px 5px 10px #000;
+  transition: top .5s ease;
+  transition: box-shadow .1s ease;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";

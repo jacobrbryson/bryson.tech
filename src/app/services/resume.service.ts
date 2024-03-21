@@ -80,7 +80,7 @@ export class ResumeService {
             years: 5
           },
           {
-            name: "NodeJS",
+            name: "Node.js",
             prefix: "fab",
             icon: "node-js",
             years: 4
@@ -148,7 +148,7 @@ export class ResumeService {
         image: "assets/images/kit.jpg",
         logo: "assets/images/kit_logo.png",
         name: "Kincaid IT",
-        position: "Director of Development ‐ Sept 2020 - Now",
+        position: "Director of Development ‐ Sept 2020 - March 2024",
         activities:[
           {
             name: "Admin+",
@@ -513,6 +513,46 @@ export class ResumeService {
         ]
       }
     ],
+    personalProjects:[
+      {
+        url:"https://orcwood.com/",
+        name:"Orcwood Gaming",
+        description:`A small gaming studio started by my sister and me whose primary focus is games developed in Unity.
+        Several friends have joined/contributed over the years and we have a handful of games. 
+        I designed, host, and manage the website as well as contributed to all the games listed.`,
+        favicon:"https://orcwood.com/assets/logo-og-games.png",
+        technologies:[
+          {
+            name: "Ionic (Angular)",
+            prefix: "fab",
+            icon: "angular"
+          }
+        ]
+      },
+      {
+        url:"https://loudounemptybowls.org/",
+        name:"Loudoun Empty Bowls",
+        description:`A non-profit with a mission to bring together artists and community to help end food insecurity in Loudoun County, Virginia.
+        I host and support this Wordpress website. Additionally, I wrote a custom app that integrates with the orders table for the the organizations annual charity event. This app was originally designed to meet the organizations unique needs during covid, however it has become a valuable tool the organization continues to use to support their annual fundraiser.`,
+        favicon:"https://www.loudounemptybowls.org/wp-content/uploads/2018/05/cropped-LEB-Basic-Bowl2-1-1-32x32.png",
+        technologies:[{
+          name: "Wordpress (PHP)",
+          prefix: "fab",
+          icon: "wordpress",
+        },
+        {
+          name: "MySQL",
+          prefix: "fas",
+          icon: "database",
+        },
+        {
+          name: "Node.js",
+          prefix: "fab",
+          icon: "node-js",
+        },
+      ]
+      }
+    ],
     education: [
       {
         image: "assets/images/Gamecocks-logo.png",
@@ -538,6 +578,7 @@ export interface Resume{
   profileImage: string;
   techStack: Category[];
   employments: Employment[];
+  personalProjects: PersonalProject[];
   education: Education[];
 }
 
@@ -551,7 +592,7 @@ export interface Technology{
   name: string;
   prefix: string;
   icon: string;
-  years: number;
+  years?: number;
 }
 
 export interface Employment{
@@ -581,4 +622,12 @@ export interface Education{
   type: string;
   location: string;
   date: string;
+}
+
+export interface PersonalProject{
+  url:string;
+  name:string;
+  description:string;
+  favicon:string;
+  technologies:Technology[];
 }

@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Resume } from 'src/app/services/resume.service';
 
 @Component({
   selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  templateUrl: './projects.component.html'
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
+  @Input() resume:Resume;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  routeTo(url:string){
+    window.open(url, "_blank");
   }
-
 }

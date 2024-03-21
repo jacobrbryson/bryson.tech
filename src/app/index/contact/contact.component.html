@@ -64,7 +64,7 @@
                 </p>
             </div>
         </div>
-        <div [ngClass]="{'col-sm-4' : !emailSent && !error}"class="col-12 text-center center-content headline pt-4">
+        <div [ngClass]="{'col-sm-4' : !emailSent && !error}"class="col-12 text-center center-content headline">
             <h3>Ross Bryson</h3>
             <a [href]="email">{{email}}</a><br/>
             <a href="https://www.linkedin.com/in/ross-bryson-software-engineer" target="_blank" alt="Linkedin Profile">
@@ -75,6 +75,9 @@
             </a><br/>
             <a href="https://github.com/jacobrbryson" target="_blank" alt="GitHub Profile">
                 <fa-icon [icon]="['fab', 'github-square']" class="mr-2"></fa-icon>GitHub
+            </a><br/>
+            <a href="https://www.strava.com/athletes/96238480" target="_blank" alt="Strava Profile">
+                <fa-icon [icon]="['fab', 'strava']" class="mr-2"></fa-icon>Strava
             </a><br/>
         </div>
     </div>

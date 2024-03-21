@@ -1,14 +1,26 @@
-<div class="container-fluid p-3">
-    <div class="row">
-        <div class="col-12">
-            <h3 class="text-center py-2 mt-3 headline">
-                <span class="underline pb-3">Projects</span>
-            </h3>
-        </div>
-    </div>
+<div *ngIf="resume" class="container-fluid p-3">
     <div class="row py-3">
-        <div class="col-12 mt-2">
-            
+        <div
+            *ngFor="let personalProject of resume.personalProjects" 
+            class="col-12 mt-2">
+            <div class="card bg-secondary card-hover p-3 clickable" (click)="routeTo(personalProject.url)">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <div class="d-block d-flex align-items-center justify-content-between">
+                                <span class="mb-2">{{ personalProject.name }}</span>
+                                <div>
+                                    <fa-icon *ngFor="let tech of personalProject.technologies" [matTooltip]="tech.name" [icon]="[tech.prefix, tech.icon]" class="mr-2"></fa-icon>
+                                </div>
+                            </div>
+														<div class="d-flex align-items-center pl-3" style="gap:30px;">
+															<img [src]="personalProject.favicon" [alt]="personalProject.name" height="32" width="32"/>
+															<small style="white-space: pre-line">{{ personalProject.description }}</small>
+														</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

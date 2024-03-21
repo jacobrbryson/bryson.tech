@@ -37,12 +37,6 @@ a:hover:after {
     margin-top:-50%;
     max-width: 300px;
 }
-.card-hover:hover {
-    top:-5px;
-    box-shadow: 5px 5px 10px #000;
-    transition: top .5s ease;
-    transition: box-shadow .1s ease;
-}
 
 .col-12{
     transition: all 0.5s ease-in-out;
